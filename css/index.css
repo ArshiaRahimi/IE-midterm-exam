@@ -1,0 +1,100 @@
+
+/* Main goal of this block is to set a background image to our webpage and make everything in the center*/
+body{
+    margin: 0;
+    padding: 0;
+    background: url("../images/cool-background.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+/* container is the main block which everything happens inside it. display type is flex and the its color
+is white. we customized it in order to make it appear in the center of page*/
+.container{
+    border: 1px solid;
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 45%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+/*container is divided into two parts: mainLeft and mainRight*/
+.mainLeft{
+    margin-left: 90%;
+}
+.mainRight{
+    margin: 0 -150% ;
+}
+/* name is our text box. display type is flex to make the tag and box in the same line*/
+.name{
+    display: flex;
+}
+.genderRadio{
+    border-color: white;
+    margin-top: 50%;
+    display: block;
+}
+/* display type is flex and it will make our radio buttons and its tags appear in the same line*/
+.genderStyle {
+    display: flex;
+}
+/* submit button */
+.submitButtonStyle{
+    margin-top: 30%;
+}
+/* the following two blocks is our output section which contains gender and probability results.
+ it uses flex and have different colors
+ */
+.resultBoxForGender{
+    display: flex;
+    color: cornflowerblue;
+}
+.resultBoxForProbability{
+    display: flex;
+    color: deepskyblue;
+}
+
+/* savedPanel shows the result of save operation(cookies). its color is pink and its adjusted with margin-top=10 to make
+it a little bit under our two result boxes
+ */
+.savedPanel{
+    border: 1px solid;
+    background-color: pink;
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 10%;
+    width: 50%;
+}
+/* used margin-left to make some distance from its parent's panel */
+.savedValue{
+    margin-left: 5%;
+}
+/* clear button adjustments*/
+.clearButtonStyle{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+}
+/* block of error notifications. used nowrap to make all words in the same line*/
+.error{
+    display: inline-block;
+    white-space: nowrap;
+}
+
+/* h2 header is for the name of our webpage. used nowrap again and a font to make it look cooler. */
+h2{
+    white-space: nowrap;
+    font-family: 'Brush Script MT', cursive;
+}

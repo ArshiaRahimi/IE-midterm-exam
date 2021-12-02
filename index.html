@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genderize</title>
+    <link rel="stylesheet" href="../IE-midterm-exam/css/index.css">
+</head>
+<body>
+<div class="container">
+    <div class="leftColumn">
+        <div class="mainLeft">
+            <h2>Mr. or Mrs.?!</h2>
+            <div class="name">
+                <label>Name:</label>
+                <input id="nameLabel" type="text">
+            </div>
+            <div class="error">
+                <span id="error"></span>
+            </div>
+            <div class="genderRadio">
+                <div class="genderStyle">
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="M"/>
+                </div>
+                <div class="genderStyle">
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="F"/>
+                </div>
+                <div class="submitButtonStyle">
+                    <input type="submit" id="nameSubmit" value="Submit"/>
+                </div>
+                <div class="submitButtonStyle">
+                    <input type="submit" id="saveId" value="Save"/>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="rightColumn">
+        <div class="mainRight">
+            <h2>Prediction</h2>
+            <div class="resultBoxForGender">
+                <output name="res" id="resId">output</output>
+            </div>
+            <div class="resultBoxForProbability">
+                <output name="res2" id="resId2">probability</output>
+            </div>
+            <div class="savedPanel">
+                <h3>Saved Answer</h3>
+                <div class="savedValue" id="savedValue"></div>
+                <div class="clearButtonStyle">
+                    <input type="submit" id="eraseId" value="Clear"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../IE-midterm-exam/js/index.js"></script>
+</body>
+</html>

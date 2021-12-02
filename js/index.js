@@ -95,7 +95,7 @@ function maleRadioHandler(){
         errorMessage()
         setTimeout(fadeOut, 2000);
     }else {
-        document.getElementById("resId").innerHTML = "Male"
+        document.getElementById("resId").innerHTML = "male"
         document.getElementById("resId2").innerHTML = "User's choice"
     }
 }
@@ -107,7 +107,7 @@ function femaleRadioHandler(){
         errorMessage()
         setTimeout(fadeOut, 2000);
     }else {
-        document.getElementById("resId").innerHTML = "Female"
+        document.getElementById("resId").innerHTML = "female"
         document.getElementById("resId2").innerHTML = "User's choice"
     }
 }
